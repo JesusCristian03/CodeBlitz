@@ -23,21 +23,9 @@ git push
 git push --set-upstream origin master //Subir archivos por primera vez 
 git pull origin master
 
+CREAR MODULO PRINCIPAL PARA PAGINA Y SUS COMPONENTES ESPECIFICOS
 
-
-
-
-
-
-Ejercicio Práctico
-Aquí tienes un ejercicio práctico para implementar ruteo en tu aplicación Angular:
-
-Crea dos componentes: HomeComponent y AboutComponent.
-
-Configura las rutas en app-routing.module.ts para que HomeComponent se muestre en la ruta raíz (/) y AboutComponent se muestre en la ruta /about.
-
-Agrega enlaces de navegación en tu componente principal (app.component.html) usando routerLink.
-
-Incluye <router-outlet> en tu componente principal para renderizar los componentes según la ruta activa.
-
-Ejecuta tu aplicación con ng serve y verifica que la navegación funcione correctamente entre los componentes.
+ng generate module tutorial-individual --routing //crea un módulo para tu página individual
+ng generate component tutorial-individual/tutorial-page // crea el componente principal dentro de este módulo
+ng generate component tutorial-individual/header
+ng generate component tutorial-individual/video-description //genera los componentes necesarios para cada sección específica de la página de individual.
